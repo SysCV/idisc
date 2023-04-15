@@ -41,7 +41,7 @@ We release pre-computed predictions for reproducibility. However, code and model
 ## Model Zoo
 
 ### General
-Here is the collection of all models the namespace of which is compatible with the current repo. We store the output predictions in the same relative path as the depth path from the corresponding dataset. For evaluation we used micro averaging, while some other depth repos use macro averaging; the difference is in the order of decimals of percentage points, but we found it more appropriate for datasets with uneven density distributions, e.g. due to point cloud accumulation.
+We store the output predictions in the same relative path as the depth path from the corresponding dataset. For evaluation we used micro averaging, while some other depth repos use macro averaging; the difference is in the order of decimals of percentage points, but we found it more appropriate for datasets with uneven density distributions, e.g. due to point cloud accumulation.
 Please note that the depth map is rescaled as in the original dataset to be stored as .png file. In particular, to obtain metric depth, you need to divide NYUv2 results by 1000, and results for all other datasets by 256. Normals need to be rescaled from ``[0, 255]`` to ``[-1, 1]``. 
 Predictions are not interpolated, that is, the output dimensions are one quarter of the input dimensions.
 
