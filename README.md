@@ -18,10 +18,15 @@
 ## Visualization
 
 ### KITTI
-![](docs/kitti_example.gif)
+<p align="center">
+  <img src="docs/kitti_example.gif" alt="animated" />
+</p>
+
 
 ### NYUv2-Depth
-![](docs/nyu_example.gif)
+<p align="center">
+  <img src="docs/nyu_example.gif" alt="animated" />
+</p>
 
 For more, and not compressed, visual examples please visit [vis.xyz](https://vis.xyz/pub/idisc/).
 
