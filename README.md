@@ -8,13 +8,19 @@
 
 ![](docs/idisc-banner.png)
 
-
 > [**iDisc: Internal Discretization for Monocular Depth Estimation**](),            
 > Luigi Piccinelli, Christos Sakaridis, Fisher Yu,
 > CVPR 2023 (to appear)
 > *Project Website ([iDisc](https://vis.xyz/pub/idisc/))* 
 > *Paper ([arXiv 2304.06334](https://arxiv.org/pdf/2304.06334.pdf))*
 
+
+## Visualization
+
+![](docs/kitti_example.gif)
+![](docs/nyu_example.gif)
+
+For more, and not compressed, visual examples please visit [vis.xyz](https://vis.xyz/pub/idisc/).
 
 ## Citation
 
@@ -35,7 +41,7 @@ Monocular depth estimation is fundamental for 3D scene understanding and downstr
 
 ## Code Release
 
-We release pre-computed predictions for reproducibility. However, code and models will be released before CVPR conference (18th June 2023).
+We release here model output predictions for reproducibility. Code and model weights will be released before CVPR conference (18th June 2023).
 
 
 ## Model Zoo
@@ -43,7 +49,8 @@ We release pre-computed predictions for reproducibility. However, code and model
 ### General
 We store the output predictions in the same relative path as the depth path from the corresponding dataset. For evaluation we used micro averaging, while some other depth repos use macro averaging; the difference is in the order of decimals of percentage points, but we found it more appropriate for datasets with uneven density distributions, e.g. due to point cloud accumulation.
 Please note that the depth map is rescaled as in the original dataset to be stored as .png file. In particular, to obtain metric depth, you need to divide NYUv2 results by 1000, and results for all other datasets by 256. Normals need to be rescaled from ``[0, 255]`` to ``[-1, 1]``. 
-Predictions are not interpolated, that is, the output dimensions are one quarter of the input dimensions.
+Predictions are not interpolated, that is, the output dimensions are one quarter of the input dimensions. For evaluation we used bilinear interpolation with aligned corners.
+
 
 ### KITTI
 
