@@ -1,5 +1,5 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/idisc-internal-discretization-for-monocular/monocular-depth-estimation-on-kitti-eigen)](https://paperswithcode.com/sota/monocular-depth-estimation-on-kitti-eigen?p=idisc-internal-discretization-for-monocular)
-[![KITTI Bechmark](https://img.shields.io/badge/KITTI%20Benchmark-3rd%20among%20all%20at%20submission%20time-blue)](https://www.cvlibs.net/datasets/kitti/eval_depth.php?benchmark=depth_prediction)
+[![KITTI Benchmark](https://img.shields.io/badge/KITTI%20Benchmark-3rd%20among%20all%20at%20submission%20time-blue)](https://www.cvlibs.net/datasets/kitti/eval_depth.php?benchmark=depth_prediction)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/idisc-internal-discretization-for-monocular/monocular-depth-estimation-on-nyu-depth-v2)](https://paperswithcode.com/sota/monocular-depth-estimation-on-nyu-depth-v2?p=idisc-internal-discretization-for-monocular)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/idisc-internal-discretization-for-monocular/surface-normals-estimation-on-nyu-depth-v2-1)](https://paperswithcode.com/sota/surface-normals-estimation-on-nyu-depth-v2-1?p=idisc-internal-discretization-for-monocular)
 
