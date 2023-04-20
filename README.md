@@ -11,7 +11,7 @@
 > [**iDisc: Internal Discretization for Monocular Depth Estimation**](),            
 > Luigi Piccinelli, Christos Sakaridis, Fisher Yu,
 > CVPR 2023 (to appear)
-> *Project Website ([iDisc](https://vis.xyz/pub/idisc/))* 
+> *Project Website ([iDisc](http://vis.xyz/pub/idisc/))* 
 > *Paper ([arXiv 2304.06334](https://arxiv.org/pdf/2304.06334.pdf))*
 
 
@@ -28,7 +28,7 @@
   <img src="docs/nyu_example.gif" alt="animated" />
 </p>
 
-For more, and not compressed, visual examples please visit [vis.xyz](https://vis.xyz/pub/idisc/).
+For more, and not compressed, visual examples please visit [vis.xyz](http://vis.xyz/pub/idisc/).
 
 ## Citation
 
