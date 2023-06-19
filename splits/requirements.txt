@@ -1,0 +1,12 @@
+black
+isort
+setuptools
+tqdm
+click
+wheel
+pytorch==1.10
+torchvision
+einops
+numpy
+matplotlib
+timm

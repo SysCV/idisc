@@ -1,0 +1,86 @@
+{
+    "generic": {
+        "seed": 13
+    },
+    "training": {
+        "n_iters": 40000,
+        "batch_size": 8,
+        "validation_interval": 200,
+        "nsteps_accumulation_gradient": 2,
+        "lr": 0.0002,
+        "wd": 0.05,
+        "div_factor": 1,
+        "final_div_factor": 10,
+        "loss": {
+            "name": "SILog",
+            "weight": 10.0
+        }
+    },
+    "data": {
+        "crop": "garg",
+        "train_dataset": "KITTIDataset",
+        "val_dataset": "DDADDataset",
+        "data_root": "datasets",
+        "benchmark": false,
+        "augmentations": {
+            "horizontal_flip": 0.5,
+            "random_rotation": 2.5,
+            "random_scale": 0.05,
+            "random_translation": 0.05,
+            "random_brightness": 0.1,
+            "random_contrast": 0.1,
+            "random_saturation": 0.1,
+            "random_gamma": 0.2,
+            "random_hue": 0.1,
+            "random_sharpness": 0.1,
+            "random_posterize": 4,
+            "random_solarize": 0.2,
+            "rotation_p": 1,
+            "scale_p": 1,
+            "translation_p": 0,
+            "brightness_p": 1,
+            "contrast_p": 1,
+            "saturation_p": 1,
+            "gamma_p": 1,
+            "hue_p": 1,
+            "sharpness_p": 0,
+            "posterize_p": 0,
+            "solarize_p": 0,
+            "equalize_p": 0,
+            "autocontrast_p": 0
+        }
+    },
+    "model": {
+        "num_heads": 1,
+        "attn_dec": true,
+        "activation": "gelu",
+        "expansion": 4,
+        "output_dim": 1,
+        "isd": {
+            "latent_dim": 128,
+            "num_resolutions": 3,
+            "depths": 2
+        },
+        "pixel_decoder": {
+            "heads": 4,
+            "output_channels": 256,
+            "depths": 6,
+            "hidden_dim": 256,
+            "anchor_points": 8
+        },
+        "pixel_encoder": {
+            "img_size": [
+                1216,
+                352
+            ],
+            "name": "swin_large_22k",
+            "lr_dedicated": 2e-05
+        },
+        "afp": {
+            "context_low_resolutions_skip": 1,
+            "depths": 2,
+            "latent_dim": 128,
+            "num_latents": 32
+        }
+    }
+}
