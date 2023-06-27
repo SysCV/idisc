@@ -1,7 +1,6 @@
 ## Prepare datasets
 
-Disclaimer: Argoverse and DDAD are still under revision.
-Disclaimer: the code works for tarballs with both data and splits in it. For instance, NYU comes as a zip file, we suggest to re-comprress it, with split files, as tarball.
+Warninig: the code works for tarballs with both data and splits in it. For instance, NYU comes as a zip file, we suggest to re-comprress it, with split files, as tarball.
 
 Before training, the data need to be unzipped in the ``<BASE-PATH>/datasets``
 If your folder structure is different, you may need to change the corresponding paths in the config files.
@@ -18,6 +17,12 @@ Finally, compress everything in a single tarball.
 
 You can download the dataset from [Google Drive Link](https://drive.google.com/file/d/1wC-io-14RCIL4XTUrQLk6lBqU2AexLVp/view?usp=share_link).
 Splits are provided [here](../splits/nyu). For compatibility, we suggest to re-compress with splits files as a tarball.
+
+
+### **NYU**
+
+You can download the dataset from [link](https://hkuhk-my.sharepoint.com/:f:/g/personal/xjqi_hku_hk/Ek0Vm--5oi1GssioLE5LjO0ByLTKpWAG00zYYUCeiydR7g?e=8kAdLZ) from [GeoNet repo](https://github.com/xjqi/GeoNet).
+Splits are provided [here](../splits/nyu_normal).
 
 
 ### **SUNRGBD**
